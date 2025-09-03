@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <style>
+    body {
+      background-color: #f7dae7;
+      font-family: 'Times New Roman', Times, serif;
+      color: black;
+      margin: 0;
+    }
+
+    /* Navbar */
+    .navbar {
+      top: 0;
+      left: 0;
+      position: fixed;
+      display: flex;
+      width: 100%;
+      height: 70px;
+      padding: 10px 0;
+      justify-content: left;
+      flex-wrap: wrap;
+      z-index: 1000;
+      background-color: #a55166;  
+    }
+    .navbar a {
+      color: silver;
+      text-align: center;
+      padding: 15px 15px;
+      text-decoration: none;
+      font-size: 25px;
+    }
+    .navbar a:hover {
+      background-color:#d38c9d;
+      color: silver;
+    }
+
+    /* Container for cards */
+    .card-container {
+      padding: 120px 40px;
+      display: flex;
+      flex-direction: column; /* stack cards vertically */
+      gap: 30px;
+    }
+
+    /* Card style */
+    .card {
+      display: flex; /* makes card horizontal */
+      align-items: center;
+      background: #b27474;
+      color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px #915959;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      min-height: 220px; /* keeps all cards tall enough */
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* General image style */
+    .card img {
+      width: 250px;          /* same width for all */
+      height: 200px;         /* same height for all */
+      object-fit: contain;   /* keeps logo aspect ratio */
+      background: white;     /* adds white background behind logos */
+      padding: 10px;         /* spacing so logos don’t touch edges */
+      flex-shrink: 0;
+      border-right: 3px solid #915959;
+    }
+
+    /* Text section */
+    .card-content {
+      padding: 20px;
+      text-align: left;
+      flex: 1;
+    }
+
+    .card-content h1 {
+      margin: 0 0 10px;
+      font-size: 24px;
+      color: #f9d342;
+    }
+
+    .card-content p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="index.html">HOME</a>
+    <a href="Education.html">EDUCATION</a>
+    <a href="Projects.html">PROJECTS</a>
+    <a href="skills.html">SKILLS</a>
+    <a href="certificate.html">CERTIFICATE</a>
+    <a href="contact.html">CONTACT</a>
+  </div>
+
+  <!-- Cards -->
+  <div class="card-container">
+
+    <div class="card">
+      <img src="iics.jpg" alt="IICBS Conference">
+      <div class="card-content">
+        <h1>Participated in IICBS 2025 conference.</h1>
+        <p>I presented my research at the IICBS 2025 conference, delivering a detailed presentation and confidently defending it by answering several questions. The title of my research article was "License Plate Recognition using YOLOv8". This experience improved my ability to communicate complex ideas and strengthened my public speaking skills.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="stm.jpg" alt="STM Journal">
+      <div class="card-content">
+        <h1>Published an article in STM journals in 2024.</h1>
+        <p>The title of my research article was "Prediction of Mobile Phone Price using Machine learning classifiers" and it was published in STM journals. This was my first time writing a research article, and it helped me gain exposure to academic publishing and understand all the norms of this field.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="iciissd.jpg" alt="ICIDSSD Conference">
+      <div class="card-content">
+        <h1>Participated in ICIDSSD 24 conference in 2024.</h1>
+        <p>I presented my work at the ICIDSSD 24 conference, where I explained it through a presentation and defended it by answering several questions. The title of my research article was "Prediction of Mobile Phone Price using Machine learning classifiers" and the abstract of my paper was published in the official ICIDSSD’24 souvenir book.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="JAMIA HAMDARD.png" alt="3D Hologram">
+      <div class="card-content">
+        <h1>3D HOLOGRAM</h1>
+        <p>I worked with a team of five to build a 3D hologram project. We showcased it at the Design of Artifacts science fair. The project highlighted how holographic visuals can enhance interactive displays and captivated the audience.</p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

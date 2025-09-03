@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDEX</title>
+    <style>
+    body{
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+        background-color: #f7dae7;
+    }
+    /* Navbar */
+    .navbar {
+        top: 0;
+        left: 0;
+        position: fixed;
+        display: flex;
+        width: 100%;
+        height: 70px;
+        padding: 10px 0;
+        justify-content: left;
+        flex-wrap: wrap;
+        z-index: 1000;
+        background-color: #a55166;  
+    }
+    .navbar a{
+        color: silver;
+        text-align: center;
+        padding: 15px 15px;
+        text-decoration: none;
+        font-size: 25px;
+    }
+    .navbar a:hover{
+        background-color:#d38c9d;
+        color: silver;
+    }
+    
+    /*main body styling*/
+    .main{
+        display: flex;
+        align-items: center;
+        gap: 150px;
+        font-size: 20px;
+        padding: 170px 20px; /* extra top padding so text doesn’t overlap navbar */
+    }
+
+    /*image styling*/
+    .image{
+        width: 350px;  
+        height: 350px;  
+        background: url("PHOTO.jpg") no-repeat center center/cover; 
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        margin-left: 50px;  /* extremely to left */
+        flex-shrink: 0; 
+    }
+
+    /* text section */
+    .text{
+        margin-right: 0px;
+        max-width: 700px;
+        font-size: 40px;
+    }
+    
+    /* Media queries */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+      }
+      .navbar a {
+        padding: 10px;
+        font-size: 16px;
+      }
+      .main {
+        flex-direction: column;
+        text-align: center;
+      }
+      .image-box {
+        width: 100%;
+        height: 250px;
+      }
+      .text-box h1 {
+        font-size: 24px;
+      }
+      .text-box p {
+        font-size: 16px;
+      }
+    }
+    
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="Education.html">EDUCATION</a>
+        <a href="Projects.html">PROJECTS</a>
+        <a href="skills.html">SKILLS</a>
+        <a href="certificate.html">CERTIFICATE</a>
+        <a href="contact.html">CONTACT</a>
+    </div>
+
+    <!-- Main section -->
+    <div class="main">
+        <div class="image"></div>
+        <div class="text">
+            <h2><i><b><u>ABOUT ME</u></b></i></h2>
+            <p>Determined, hardworking and skilled Computer Science Engineer with good communication skills.
+                Collaborative team player with leadership skills and performs well in stressful conditions, 
+                contributes to resolving challenges and growth of business.</p>
+        </div>
+    </div>
+</body>
+</html>

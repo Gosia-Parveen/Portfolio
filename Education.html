@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDEX</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            color: black;
+                background-color: #f7dae7;
+        }
+        /* Navbar */
+        .navbar {
+            top: 0;
+            left: 0;
+            position: fixed;
+            display: flex;
+            width: 100%;
+            height: 70px;
+            padding: 10px 0;
+            justify-content: left;
+            flex-wrap: wrap;
+            z-index: 1000;
+            background-color: #a55166;  
+        }
+        .navbar a{
+            color: silver;
+            text-align: center;
+            padding: 15px 15px;
+            text-decoration: none;
+            font-size: 25px;
+        }
+        .navbar a:hover{
+            background-color:#d38c9d;
+            color: silver;
+        }
+
+        /*main body styling*/
+        .main{
+            display: flex;
+            align-items: center;
+            gap: 150px;
+            font-size: 20px;
+            padding: 170px 20px; /* extra top padding so text doesn’t overlap navbar */
+        }
+
+        /*image styling*/
+        .image{
+            width: 350px;  
+            height: 350px;  
+            background: url("PHOTO.jpg") no-repeat center center/cover; 
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            margin-left: 50px;  /* extremely to left */
+            flex-shrink: 0; 
+        }
+
+        /* text section */
+        .text{
+            margin-right: 0px;
+            max-width: 700px;
+            font-size: 40px;
+        }
+        .card-container {
+              padding:100px 70px;  
+              display: flex;
+              flex-wrap: wrap;
+              gap: 20px;
+              justify-content: center;
+              width: 100%;
+                  max-width: 1200px;
+        }
+        .card:hover {
+          transform: translateY(-5px);
+        }
+
+        .card {
+          background: #b27474;
+          color: white;
+          flex: 1 1 380px; /* Flexible width */
+          max-width: 500px;
+          padding: 20px;
+          border-radius: 12px;
+          box-shadow: 0 4px 10px #915959;
+          text-align: left;   /* ✅ text aligned from left */
+          transition: transform 0.3s ease;
+            }
+
+        .card h1 {
+          margin: 10px 0;
+          font-size: 35px;
+          color: #f9d342; /* golden highlight */
+          text-align: center; /* ✅ keep only title centered */
+        }
+
+        .card h3 {
+          font-size: 28px;
+          margin-top: 10px;
+          text-align: left;  /* ✅ force left align */
+            }
+
+        .card p {
+          font-size: 20px;
+          line-height: 1.5;
+          margin: 6px 0;
+          text-align: left;  /* ✅ left align paragraph */
+        }
+
+    
+        /* Media queries */
+        @media (max-width: 768px) {
+          .navbar {
+            flex-direction: column;
+          }
+          .navbar a {
+            padding: 10px;
+            font-size: 16px;
+          }
+          .main {
+            flex-direction: column;
+            text-align: center;
+          }
+          .image-box {
+            width: 100%;
+            height: 250px;
+          }
+          .text-box h1 {
+            font-size: 24px;
+          }
+          .text-box p {
+            font-size: 16px;
+          }
+        }
+    
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="Education.html">EDUCATION</a>
+        <a href="Projects.html">PROJECTS</a>
+        <a href="skills.html">SKILLS</a>
+        <a href="certificate.html">CERTIFICATE</a>
+        <a href="contact.html">CONTACT</a>
+    </div>
+
+    <!-- Main section -->
+    <div class="card-container">
+            <div class="card">
+              <h1>Masters Degree</h1><hr>
+                <h3>Master of Technology, Data Sciences.</h3>
+                <p>Jamia Millia Islamia, New Delhi - 110025. </p>
+                <p>Batch: 2025-2027.</p>
+                <p>Currently in 1st semester.</p>
+            </div>
+
+            <div class="card">
+              <h1>Bachelors Degree</h1><hr>
+              <h3>Bachelor of Technology, Computer Science and Engineering.</h3>
+              <p>Jamia Hamdard University, New Delhi.</p>
+              <p>BATCH: 2021 - 2025.</p>
+              <p>B. TECH completed, 1st Division with Distinction</p>
+            </div>
+
+            <div class="card">
+              <h1>School</h1><hr>
+              <h3>Senior Secondary(12TH).</h3>
+              <p>Hamdard Public School, New Delhi.</p>
+              <p>Year of completion 2021.</p>
+              <p>Percentage 93%.</p>
+            </div>
+
+            <div class="card">
+              <h1>School</h1><hr>
+              <h3>Senior Secondary(10TH).</h3>
+              <p>Hamdard Public School, New Delhi.</p>
+              <p>Year of completion 2019.</p>
+              <p>Percentage 90%.</p>
+            </div>
+    </div>
+</body>
+</html>

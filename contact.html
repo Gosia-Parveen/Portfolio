@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDEX</title>
+    <style>
+    body{
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+        background-color: #f7dae7;
+    }
+    /* Navbar */
+    .navbar {
+        top: 0;
+        left: 0;
+        position: fixed;
+        display: flex;
+        width: 100%;
+        height: 70px;
+        padding: 10px 0;
+        justify-content: left;
+        flex-wrap: wrap;
+        z-index: 1000;
+        background-color: #a55166;  
+    }
+    .navbar a{
+        color: silver;
+        text-align: center;
+        padding: 15px 15px;
+        text-decoration: none;
+        font-size: 25px;
+    }
+    .navbar a:hover{
+        background-color:#d38c9d;
+        color: silver;
+    }
+    
+    /*main body styling*/
+    .main{
+        display: flex;
+        align-items: center;
+        gap: 150px;
+        font-size: 20px;
+        padding: 170px 20px; /* extra top padding so text doesn’t overlap navbar */
+    }
+
+    /*image styling*/
+    .image{
+        width: auto;  
+        height: 700px;  
+        background: url("map.jpg") no-repeat center center/cover; 
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        margin-left: 10px;  /* extremely to left */
+        margin-bottom: 40px;
+        margin-right: 10px;
+        flex-shrink: 0; 
+
+    }
+
+    /* text section */
+    .text{
+        margin-right: 0px;
+        max-width: 700px;
+        font-size: 40px;
+    }
+        .card-container {
+          padding:100px 20px; 
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          width: auto;
+          max-width: auto;
+    }
+
+    .card {
+      background: #b27474;
+      color: white;
+      flex: 1 1 380px; /* Flexible width */
+      max-width: auto;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px #915959;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h1 {
+      margin: 10px 0;
+      font-size: 35px;
+      color: #f9d342; /* golden highlight */
+    }
+
+    .card h3 {
+        align-items: last baseline;
+        font-size: 28px;
+    }
+
+    .card p {
+      font-size: 20px;
+      line-height: 1.5;
+      margin: 6px 0;
+    }
+    
+    /* Media queries */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+      }
+      .navbar a {
+        padding: 10px;
+        font-size: 16px;
+      }
+      .main {
+        flex-direction: column;
+        text-align: center;
+      }
+      .image {
+        width: 100%;
+        height: 250px;
+      }
+      
+    }
+    
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="Education.html">EDUCATION</a>
+        <a href="Projects.html">PROJECTS</a>
+        <a href="skills.html">SKILLS</a>
+        <a href="certificate.html">CERTIFICATE</a>
+        <a href="contact.html">CONTACT</a>
+    </div>
+
+    <!-- Main section -->
+    
+    <div class="card-container">
+        <div class="card">
+          <h1>CONTACT DETAILS</h1>
+          <h3>GOSIA SANDAL PARVEEN</h3>
+          <p>ADDRESS: Jamia Nagar, Okhla, New Delhi-110025, India.</p>
+          <p>MOBILE NUMBER: 9818060875</p>
+          <p>EMAIL ADDRESS: gosiaparveen440@gmail.com</p>
+        </div>
+    </div>
+    <div class="image"></div>
+</body>
+</html>

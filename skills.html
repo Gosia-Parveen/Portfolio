@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      body {
+        background-color: #f7dae7;
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+        margin: 0;
+      }
+
+      .image {
+        width: 470px;  
+        height: 490px;  
+        margin-left: 400px;
+        margin-bottom: 30px;
+        object-fit: cover; 
+        border: 2px solid #ccc;
+        border-radius: 10px;
+      }
+
+      /* Navbar */
+        .navbar {
+            top: 0;
+            left: 0;
+            position: fixed;
+            display: flex;
+            width: 100%;
+            height: 90px;
+            padding: 10px 0;
+            justify-content: left;
+            flex-wrap: wrap;
+            z-index: 1000;
+            background-color: #a55166;  
+        }
+        .navbar a{
+            color: silver;
+            text-align: center;
+            padding: 15px 15px;
+            text-decoration: none;
+            font-size: 25px;
+        }
+        .navbar a:hover{
+            background-color:#d38c9d;
+            color: silver;
+        }
+      .card-container {
+        padding: 100px 20px;  
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 20px;
+        justify-content: center;
+        margin: auto;
+      }
+
+      .card {
+        background: #b27474;
+        color: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px #915959;
+        text-align: left;
+        transition: transform 0.3s ease;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+      }
+
+      .card h3 {
+        font-size: 22px;
+        margin-top: 10px;
+        text-align: left;
+      }
+    
+      .card p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin: 6px 0;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <a href="index.html">HOME</a>
+      <a href="Education.html">EDUCATION</a>
+      <a href="Projects.html">PROJECTS</a>
+      <a href="skills.html">SKILLS</a>
+      <a href="certificate.html">CERTIFICATE</a>
+      <a href="contact.html">CONTACT</a>
+    </div>
+
+    <!-- Card -->
+    <div class="card-container">
+      <div class="card">
+        <h3>
+          I have a strong foundation in programming and possess hands-on experience with multiple languages. <br>
+          My skills include the following programming languages and tools.
+        </h3>
+      </div>
+    </div>
+
+    <!-- Carousel -->
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+
+        <!-- First Slide (must be active) -->
+        <div class="carousel-item active">
+          <img src="c.jpg" class="image d-blockeightheight: 4" alt="C Language">
+          <div class="carousel-caption d-none d-md-block" style="color: black;">
+            <h2><b>C Language</b></h2>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="c++.jpg" class="image d-blockeightheight: 4" alt="C++ Language">
+          <div class="carousel-caption d-none d-md-block" style="color: black;">
+            <h2><b>C++ Language</b></h2>
+          </div>
+        </div>
+      
+        <div class="carousel-item">
+          <img src="py.jpg" class="image d-blockeightheight: 4" alt="Python">
+          <div class="carousel-caption d-none d-md-block" style="color: black;">
+            <h2><b>Python</b></h2>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="my1.jpg" class="image d-blockeightheight: 4" alt="MySQL">
+          <div class="carousel-caption d-none d-md-block" style="color: black;">
+            <h2><b>MySQL</b></h2>
+          </div>
+        </div>
+      
+        <div class="carousel-item">
+          <img src="ht.jpg" class="image d-blockeightheight: 4" alt="HTML">
+          <div class="carousel-caption d-none d-md-block" style="color: black;">
+            <h2><b>HTML</b></h2>
+          </div>
+        </div>
+      
+        <div class="carousel-item">
+          <img src="of1.jpg" class="image d-blockeightheight: 4" alt="MS Office">
+          <div class="carousel-caption d-none d-md-block" style="color: black;">
+            <h2><b>MS OFFICE</b></h2>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </body>
+</html>
